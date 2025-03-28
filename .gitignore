@@ -170,3 +170,5 @@ test/config.json
 
 # typedoc docs folder
 doc/
+
+semantic/

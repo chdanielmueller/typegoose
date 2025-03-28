@@ -70,6 +70,7 @@ module.exports = {
     // prerelease branches
     { name: "old\\/(\\d+)(\\.x)", range: "${name.replace(/^old\\//g, '')}", prerelease: false },
     "master",
+    "testSemantic",
     { name: "beta", prerelease: true }
   ]
 };
