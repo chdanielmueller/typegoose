@@ -82,7 +82,7 @@ jobs:
       contents: write  # for actions/checkout to fetch code and for semantic-release to push commits, release releases and tags
       issues: write # for semantic-release to comment on and close issues
       pull-requests: write # for semantic-release to comment on and close pull requests
-    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/beta' || startsWith(github.ref, 'refs/heads/old')
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/beta' || github.ref == 'refs/heads/testSemantic' || startsWith(github.ref, 'refs/heads/old')
     needs: [tests, test-types]
     runs-on: ubuntu-latest
     steps:
