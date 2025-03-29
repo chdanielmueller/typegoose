@@ -103,7 +103,8 @@ jobs:
         run: yarn build
       - name: Semantic Release
         run: |
-          npm i -g semantic-release@24.2 @semantic-release/git@10.x @semantic-release/changelog@6.x @commitlint/config-conventional@19.x
+          npm i -g semantic-release@24.2 @semantic-release/git@10.x @semantic-release/changelog@6.x conventional-changelog-conventionalcommits@8
+          yarn 
           npx semantic-release --debug --dry-run
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
